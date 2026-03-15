@@ -2,7 +2,7 @@ import cv2
 from matplotlib import pyplot as plt
 
 
-resim = cv2.imread("istanbulkiz.jpg")
+resim = cv2.imread("istanbulkiz.jpg",0)
 
 
 cv2.namedWindow("resim",cv2.WINDOW_NORMAL)
