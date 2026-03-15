@@ -1,8 +1,18 @@
 import cv2
+from matplotlib import pyplot as plt
 
-resim = cv2.imread("istanbulkiz.jpg",0)
+
+resim = cv2.imread("istanbulkiz.jpg")
+
+
+cv2.namedWindow("resim",cv2.WINDOW_NORMAL)
+cv2.imshow("resim", resim)
+
 
 cv2.imshow("resim penceresi", resim)
+
+plt.imshow(resim,cmap="gray")
+plt.show()
 
 k=cv2.waitKey(0)
 
